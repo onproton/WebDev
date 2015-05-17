@@ -1,18 +1,25 @@
+
+<!---
+Theme Name: Simple Parallax Website
+Description: Simple Parallax Scrolling Effect
+Adapted from a template by Samuel Dalusung
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
        <title>Creating a Simple Parallax Scrolling Website</title>
        <link rel="stylesheet" href="css/style.css"/>
-	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
        <link href="http://fonts.googleapis.com/css?family=Wellfleet" rel="stylesheet" type="text/css">
-	   <link href="http://fonts.googleapis.com/css?family=Wellfleet" rel="stylesheet" type="text/css">
-	   <link href="http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" rel="stylesheet" type="text/css">	
-	   <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
-	   <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
-	<script>
-   
-<!----- JQUERY FOR SLIDING NAVIGATION --->   
+       <link href="http://fonts.googleapis.com/css?family=Wellfleet" rel="stylesheet" type="text/css">
+       <link href="http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+       <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+       <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+
+<script>
+<!----- JQUERY FOR SLIDING NAVIGATION --->
 $(document).ready(function() {
   $('a[href*=#]').each(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -23,7 +30,9 @@ $(document).ready(function() {
        if ($target) {
          var targetOffset = $target.offset().top;
 
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
          $(this).click(function() {
             $("#nav li a").removeClass("active");
             $(this).addClass('active');
@@ -35,93 +44,91 @@ $(document).ready(function() {
   });
 
 });
-
-
 </script>
 
+</head>
 
- </head> 
-    
-    
-    
-    
-    
-    
-    
-	
+
+
+
+
+<!------ BODY START--->
 <body>
 
-<!----- HEADER START--->   
+<!----- HEADER START--->
 <header id="header">
 <div class="content">
 <div id="logo"><a href=""> FUN WITH PARALAX </a></div>
 
 <nav id="nav">
-	<ul>
-		<li><a href="#slide1" class="active" title="Next Section" >Intro</a></li>
-		<li><a href="#slide2" title="Next Section">Quote</a></li>
-		<li><a href="#slide3" title="Next Section">Fun</a></li>
-		<li><a  href="#slide4" title="Next Section">More</a></li>
-		<li><a href="#slide5" title="Next Section">Contact</a></li>
-	</ul>
+    <ul>
+        <li><a href="#slide1" class="active" title="Next Section" >Intro</a></li>
+        <li><a href="#slide2" title="Next Section">Quote</a></li>
+        <li><a href="#slide3" title="Next Section">Fun</a></li>
+        <li><a  href="#slide4" title="Next Section">More</a></li>
+        <li><a href="#slide5" title="Next Section">Contact</a></li>
+    </ul>
 </nav>
 </div>
-</header>	
-<!----- HEADER END--->   
+</header>
+<!----- HEADER END--->
 
-<!----- SLIDES START --->   	
-	<div id="slide1">
-		<div class="content">
+
+
+
+<!----- SLIDES START --->
+    <div id="slide1">
+        <div class="content">
             <h2>This</h2>
-		    <h1>Is a test!</h1>
-		    <div id="divider"> </div>
-		     <h3>Is Mostly Useless! </h3>
+            <h1>Is a test!</h1>
+            <div id="divider"> </div>
+             <h3>Is Mostly Useless! </h3>
            <div id="ribbon"></div>
-	       <div id="new_year"> </div>
-		</div> 
-    </div> 
-
-	<div id="slide2">
-		<div class="content" >
+           <div id="new_year"> </div>
+        </div>
+    </div>
+    <!--- SLIDE2 -->
+    <div id="slide2">
+        <div class="content" >
             <div class="quotes_container">
-		    <h3 class="quotes">“Any sufficiently advanced technology is indistinguishable from magic”</h3>
-		   <h4 class="author_name_gray">- Arthur C. Clark </h4>
-		</div> 
-		</div> 
-    </div> 
-	
-	
+            <h3 class="quotes">“Any sufficiently advanced technology is indistinguishable from magic”</h3>
+           <h4 class="author_name_gray">- Arthur C. Clark </h4>
+        </div>
+        </div>
+    </div>
+
+    <!--- SLIDE3 -->
    <div id="slide3">
-		<div class="content">
-			   <div class="quotes_container">
-		       <h3 class="quotes">Or maybe  “any technology distinguishable from magic is insufficiently advanced.”  </h3>
-		      <h4 class="author_name_white"> </h4>
-		    </div> 
-		</div> 
-    </div> 
-	
-	
-	<div id="slide4">
-		<div class="content">
+        <div class="content">
+               <div class="quotes_container">
+               <h3 class="quotes">Or maybe  “any technology distinguishable from magic is insufficiently advanced.”  </h3>
+              <h4 class="author_name_white"> </h4>
+            </div>
+        </div>
+    </div>
+
+    <!--- SLIDE4 -->
+    <div id="slide4">
+        <div class="content">
               <div class="quotes_container">
-		    <h3 class="quotes">“Either way, here's to finding out.” </h3>
+            <h3 class="quotes">“Either way, here's to finding out.” </h3>
  <h4 class="author_name_gray">- Someone, somewhere</h4>
-		</div> 
-		</div> 
-    </div> 
-	
-	
-	<div id="slide5">
-		<div class="content">
+        </div>
+        </div>
+    </div>
+
+    <!--- SLIDE5 -->
+    <div id="slide5">
+        <div class="content">
            <div class="quotes_container">
                <h3 class="quotes">Visit my main site at <a href="http://elizadanyi.com">elizadanyi.com</a> if you have a project for me to practice on. I am always interested in learning and doing new stuff! </h3>
-		  </div> 
+          </div>
 
-        </div>	
+        </div>
 
-    </div> 
-	
+    </div>
 <!----- SLIDES END --->
+
 
 </body>
 </html>
